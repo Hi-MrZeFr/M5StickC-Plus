@@ -206,6 +206,7 @@ String makePage(String title, String contents) {
     String s = "<!DOCTYPE html><html><head>";
     s += "<meta name=\"viewport\" "
          "content=\"width=device-width,user-scalable=0\">";
+    s += "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">"; // Prevent Chinese garbled characters. 防止中文乱码
     s += "<title>";
     s += title;
     s += "</title></head><body>";
